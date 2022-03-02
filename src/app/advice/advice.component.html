@@ -1,0 +1,46 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- displays site properly based on user's device -->
+  
+    <link   rel="icon" 
+            type="image/png" 
+            sizes="32x32" 
+            href="./images/favicon-32x32.png">
+
+    <link   href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" 
+            rel="stylesheet">
+    
+    <title>Frontend Mentor | Advice generator app</title>
+  
+    
+  </head>
+
+<body>
+        <div class="tray">
+            <div class="adviceNumber">
+                 <!-- Get advice id (AKA- slip.[id]) 
+                     from component class-->
+                 A D V I C E # {{adviceId}} </div>
+
+            <div class="quote">
+                <!-- Get advice (AKA- slip.[advice]) 
+                     from component class-->
+                "{{advice}}"
+            </div> 
+
+            <div class="img-desk-divider">
+                <img width="100%" height="100%" class="myimg" src ="../../assets/images/pattern-divider-desktop.svg">
+             </div>
+            
+             <button class="icon-dice" (click)="getAdvice()">
+            </button>
+        </div>
+  
+      
+        <div class="attribution footer">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#">Ashutosh Khamar</a>.
+        </div>
+
+</body>
